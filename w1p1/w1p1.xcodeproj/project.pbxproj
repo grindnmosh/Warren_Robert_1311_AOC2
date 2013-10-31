@@ -22,6 +22,7 @@
 		E2EDD1821820200500D7D97E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2EDD1611820200500D7D97E /* UIKit.framework */; };
 		E2EDD18A1820200500D7D97E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2EDD1881820200500D7D97E /* InfoPlist.strings */; };
 		E2EDD18C1820200500D7D97E /* w1p1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD18B1820200500D7D97E /* w1p1Tests.m */; };
+		E2EDD1971820209600D7D97E /* W1P1Class.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD1961820209600D7D97E /* W1P1Class.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		E2EDD1871820200500D7D97E /* w1p1Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "w1p1Tests-Info.plist"; sourceTree = "<group>"; };
 		E2EDD1891820200500D7D97E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E2EDD18B1820200500D7D97E /* w1p1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = w1p1Tests.m; sourceTree = "<group>"; };
+		E2EDD1951820209600D7D97E /* W1P1Class.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W1P1Class.h; sourceTree = "<group>"; };
+		E2EDD1961820209600D7D97E /* W1P1Class.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W1P1Class.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				E2EDD1761820200500D7D97E /* ViewController.m */,
 				E2EDD1781820200500D7D97E /* Images.xcassets */,
 				E2EDD1641820200500D7D97E /* Supporting Files */,
+				E2EDD1951820209600D7D97E /* W1P1Class.h */,
+				E2EDD1961820209600D7D97E /* W1P1Class.m */,
 			);
 			path = w1p1;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EDD1771820200500D7D97E /* ViewController.m in Sources */,
+				E2EDD1971820209600D7D97E /* W1P1Class.m in Sources */,
 				E2EDD16E1820200500D7D97E /* AppDelegate.m in Sources */,
 				E2EDD16A1820200500D7D97E /* main.m in Sources */,
 			);
@@ -395,6 +401,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "w1p1/w1p1-Prefix.pch";
 				INFOPLIST_FILE = "w1p1/w1p1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,6 +415,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "w1p1/w1p1-Prefix.pch";
 				INFOPLIST_FILE = "w1p1/w1p1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,6 +482,7 @@
 				E2EDD1911820200500D7D97E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2EDD1921820200500D7D97E /* Build configuration list for PBXNativeTarget "w1p1Tests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +491,7 @@
 				E2EDD1941820200500D7D97E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

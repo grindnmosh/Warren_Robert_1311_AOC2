@@ -22,6 +22,9 @@
 		E2EDD1C9182063C100D7D97E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2EDD1A8182063C100D7D97E /* UIKit.framework */; };
 		E2EDD1D1182063C100D7D97E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2EDD1CF182063C100D7D97E /* InfoPlist.strings */; };
 		E2EDD1D3182063C100D7D97E /* W1P2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD1D2182063C100D7D97E /* W1P2Tests.m */; };
+		E2EDD1DE182066B000D7D97E /* shape.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD1DD182066B000D7D97E /* shape.m */; };
+		E2EDD1E11820735800D7D97E /* triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD1E01820735800D7D97E /* triangle.m */; };
+		E2EDD1E41820736600D7D97E /* square.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDD1E31820736600D7D97E /* square.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,12 @@
 		E2EDD1CE182063C100D7D97E /* W1P2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "W1P2Tests-Info.plist"; sourceTree = "<group>"; };
 		E2EDD1D0182063C100D7D97E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E2EDD1D2182063C100D7D97E /* W1P2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = W1P2Tests.m; sourceTree = "<group>"; };
+		E2EDD1DC182066B000D7D97E /* shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shape.h; sourceTree = "<group>"; };
+		E2EDD1DD182066B000D7D97E /* shape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shape.m; sourceTree = "<group>"; };
+		E2EDD1DF1820735800D7D97E /* triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangle.h; sourceTree = "<group>"; };
+		E2EDD1E01820735800D7D97E /* triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = triangle.m; sourceTree = "<group>"; };
+		E2EDD1E21820736600D7D97E /* square.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = square.h; sourceTree = "<group>"; };
+		E2EDD1E31820736600D7D97E /* square.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = square.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,12 @@
 				E2EDD1BD182063C100D7D97E /* ViewController.m */,
 				E2EDD1BF182063C100D7D97E /* Images.xcassets */,
 				E2EDD1AB182063C100D7D97E /* Supporting Files */,
+				E2EDD1DC182066B000D7D97E /* shape.h */,
+				E2EDD1DD182066B000D7D97E /* shape.m */,
+				E2EDD1DF1820735800D7D97E /* triangle.h */,
+				E2EDD1E01820735800D7D97E /* triangle.m */,
+				E2EDD1E21820736600D7D97E /* square.h */,
+				E2EDD1E31820736600D7D97E /* square.m */,
 			);
 			path = W1P2;
 			sourceTree = "<group>";
@@ -254,8 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EDD1BE182063C100D7D97E /* ViewController.m in Sources */,
+				E2EDD1E11820735800D7D97E /* triangle.m in Sources */,
+				E2EDD1E41820736600D7D97E /* square.m in Sources */,
 				E2EDD1B5182063C100D7D97E /* AppDelegate.m in Sources */,
 				E2EDD1B1182063C100D7D97E /* main.m in Sources */,
+				E2EDD1DE182066B000D7D97E /* shape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +413,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "W1P2/W1P2-Prefix.pch";
 				INFOPLIST_FILE = "W1P2/W1P2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -408,6 +427,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "W1P2/W1P2-Prefix.pch";
 				INFOPLIST_FILE = "W1P2/W1P2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -474,6 +494,7 @@
 				E2EDD1D8182063C100D7D97E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2EDD1D9182063C100D7D97E /* Build configuration list for PBXNativeTarget "W1P2Tests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +503,7 @@
 				E2EDD1DB182063C100D7D97E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

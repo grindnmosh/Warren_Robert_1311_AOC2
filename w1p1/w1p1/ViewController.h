@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "W1P1Class.h"
 
 @interface ViewController : UIViewController
 

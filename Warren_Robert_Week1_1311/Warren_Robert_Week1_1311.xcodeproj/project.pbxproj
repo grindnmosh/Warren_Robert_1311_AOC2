@@ -22,6 +22,12 @@
 		E20A493218218C600072171F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E20A491118218C600072171F /* UIKit.framework */; };
 		E20A493A18218C600072171F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E20A493818218C600072171F /* InfoPlist.strings */; };
 		E20A493C18218C600072171F /* Warren_Robert_Week1_1311Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E20A493B18218C600072171F /* Warren_Robert_Week1_1311Tests.m */; };
+		E20A494718218CE40072171F /* dogBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E20A494618218CE40072171F /* dogBase.m */; };
+		E20A494A18218D190072171F /* chihuahua.m in Sources */ = {isa = PBXBuildFile; fileRef = E20A494918218D190072171F /* chihuahua.m */; };
+		E20A494D18218D2A0072171F /* boxer.m in Sources */ = {isa = PBXBuildFile; fileRef = E20A494C18218D2A0072171F /* boxer.m */; };
+		E20A495018218D3B0072171F /* poodle.m in Sources */ = {isa = PBXBuildFile; fileRef = E20A494F18218D3B0072171F /* poodle.m */; };
+		E20A495618218E560072171F /* dogFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E20A495518218E560072171F /* dogFactory.m */; };
+		E252DC211821B7FB00B1137E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E252DC201821B7FB00B1137E /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,17 @@
 		E20A493718218C600072171F /* Warren_Robert_Week1_1311Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Warren_Robert_Week1_1311Tests-Info.plist"; sourceTree = "<group>"; };
 		E20A493918218C600072171F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E20A493B18218C600072171F /* Warren_Robert_Week1_1311Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Warren_Robert_Week1_1311Tests.m; sourceTree = "<group>"; };
+		E20A494518218CE40072171F /* dogBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dogBase.h; sourceTree = "<group>"; };
+		E20A494618218CE40072171F /* dogBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dogBase.m; sourceTree = "<group>"; };
+		E20A494818218D190072171F /* chihuahua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chihuahua.h; sourceTree = "<group>"; };
+		E20A494918218D190072171F /* chihuahua.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chihuahua.m; sourceTree = "<group>"; };
+		E20A494B18218D2A0072171F /* boxer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = boxer.h; sourceTree = "<group>"; };
+		E20A494C18218D2A0072171F /* boxer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = boxer.m; sourceTree = "<group>"; };
+		E20A494E18218D3B0072171F /* poodle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poodle.h; sourceTree = "<group>"; };
+		E20A494F18218D3B0072171F /* poodle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = poodle.m; sourceTree = "<group>"; };
+		E20A495418218E560072171F /* dogFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dogFactory.h; sourceTree = "<group>"; };
+		E20A495518218E560072171F /* dogFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dogFactory.m; sourceTree = "<group>"; };
+		E252DC201821B7FB00B1137E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +101,7 @@
 		E20A490118218C600072171F = {
 			isa = PBXGroup;
 			children = (
+				E252DC201821B7FB00B1137E /* Default-568h@2x.png */,
 				E20A491318218C600072171F /* Warren_Robert_Week1_1311 */,
 				E20A493518218C600072171F /* Warren_Robert_Week1_1311Tests */,
 				E20A490C18218C600072171F /* Frameworks */,
@@ -122,6 +140,16 @@
 				E20A492618218C600072171F /* ViewController.m */,
 				E20A492818218C600072171F /* Images.xcassets */,
 				E20A491418218C600072171F /* Supporting Files */,
+				E20A494518218CE40072171F /* dogBase.h */,
+				E20A494618218CE40072171F /* dogBase.m */,
+				E20A494818218D190072171F /* chihuahua.h */,
+				E20A494918218D190072171F /* chihuahua.m */,
+				E20A494B18218D2A0072171F /* boxer.h */,
+				E20A494C18218D2A0072171F /* boxer.m */,
+				E20A494E18218D3B0072171F /* poodle.h */,
+				E20A494F18218D3B0072171F /* poodle.m */,
+				E20A495418218E560072171F /* dogFactory.h */,
+				E20A495518218E560072171F /* dogFactory.m */,
 			);
 			path = Warren_Robert_Week1_1311;
 			sourceTree = "<group>";
@@ -235,6 +263,7 @@
 				E20A492918218C600072171F /* Images.xcassets in Resources */,
 				E20A492118218C600072171F /* Main_iPhone.storyboard in Resources */,
 				E20A491818218C600072171F /* InfoPlist.strings in Resources */,
+				E252DC211821B7FB00B1137E /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,9 +282,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20A494D18218D2A0072171F /* boxer.m in Sources */,
+				E20A495618218E560072171F /* dogFactory.m in Sources */,
 				E20A492718218C600072171F /* ViewController.m in Sources */,
+				E20A494A18218D190072171F /* chihuahua.m in Sources */,
+				E20A494718218CE40072171F /* dogBase.m in Sources */,
 				E20A491E18218C600072171F /* AppDelegate.m in Sources */,
 				E20A491A18218C600072171F /* main.m in Sources */,
+				E20A495018218D3B0072171F /* poodle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +429,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Warren_Robert_Week1_1311/Warren_Robert_Week1_1311-Prefix.pch";
 				INFOPLIST_FILE = "Warren_Robert_Week1_1311/Warren_Robert_Week1_1311-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,7 +444,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Warren_Robert_Week1_1311/Warren_Robert_Week1_1311-Prefix.pch";
 				INFOPLIST_FILE = "Warren_Robert_Week1_1311/Warren_Robert_Week1_1311-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -430,6 +468,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Warren_Robert_Week1_1311Tests/Warren_Robert_Week1_1311Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -449,6 +488,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Warren_Robert_Week1_1311/Warren_Robert_Week1_1311-Prefix.pch";
 				INFOPLIST_FILE = "Warren_Robert_Week1_1311Tests/Warren_Robert_Week1_1311Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -474,6 +514,7 @@
 				E20A494118218C600072171F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E20A494218218C600072171F /* Build configuration list for PBXNativeTarget "Warren_Robert_Week1_1311Tests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +523,7 @@
 				E20A494418218C600072171F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

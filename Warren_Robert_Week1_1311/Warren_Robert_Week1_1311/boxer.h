@@ -9,5 +9,7 @@
 #import "dogBase.h"
 
 @interface boxer : dogBase
-
+{
+    int adopted;
+}
 @end

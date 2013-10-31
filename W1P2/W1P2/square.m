@@ -10,4 +10,13 @@
 
 @implementation square
 
+-(id)init
+{
+    if (self = [super init])
+    {
+        [self shapeType:shapeType_Square shapeName:@"Square" numberOfSides:4];
+    }
+    return self;
+}
+
 @end

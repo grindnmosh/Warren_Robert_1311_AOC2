@@ -24,6 +24,8 @@
 		E252DC581821B86600B1137E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E252DC301821B86600B1137E /* Foundation.framework */; };
 		E252DC601821B86600B1137E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E252DC5E1821B86600B1137E /* InfoPlist.strings */; };
 		E252DC631821B86600B1137E /* Warren_Robert_Week1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E252DC621821B86600B1137E /* Warren_Robert_Week1Tests.m */; };
+		E252DC6E1821B88100B1137E /* dogFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E252DC6D1821B88100B1137E /* dogFactory.m */; };
+		E252DC711821B92800B1137E /* dogBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E252DC701821B92800B1137E /* dogBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		E252DC5F1821B86600B1137E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E252DC611821B86600B1137E /* Warren_Robert_Week1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Warren_Robert_Week1Tests.h; sourceTree = "<group>"; };
 		E252DC621821B86600B1137E /* Warren_Robert_Week1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Warren_Robert_Week1Tests.m; sourceTree = "<group>"; };
+		E252DC6C1821B88100B1137E /* dogFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dogFactory.h; sourceTree = "<group>"; };
+		E252DC6D1821B88100B1137E /* dogFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dogFactory.m; sourceTree = "<group>"; };
+		E252DC6F1821B92800B1137E /* dogBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dogBase.h; sourceTree = "<group>"; };
+		E252DC701821B92800B1137E /* dogBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dogBase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +132,10 @@
 				E252DC4C1821B86600B1137E /* ViewController.h */,
 				E252DC4D1821B86600B1137E /* ViewController.m */,
 				E252DC351821B86600B1137E /* Supporting Files */,
+				E252DC6C1821B88100B1137E /* dogFactory.h */,
+				E252DC6D1821B88100B1137E /* dogFactory.m */,
+				E252DC6F1821B92800B1137E /* dogBase.h */,
+				E252DC701821B92800B1137E /* dogBase.m */,
 			);
 			path = Warren_Robert_Week1;
 			sourceTree = "<group>";
@@ -277,6 +287,8 @@
 				E252DC3B1821B86600B1137E /* main.m in Sources */,
 				E252DC3F1821B86600B1137E /* AppDelegate.m in Sources */,
 				E252DC4E1821B86600B1137E /* ViewController.m in Sources */,
+				E252DC6E1821B88100B1137E /* dogFactory.m in Sources */,
+				E252DC711821B92800B1137E /* dogBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

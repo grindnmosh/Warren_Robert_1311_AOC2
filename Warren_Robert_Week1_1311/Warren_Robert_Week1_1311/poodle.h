@@ -9,5 +9,7 @@
 #import "dogBase.h"
 
 @interface poodle : dogBase
-
+{
+    int haircuts;
+}
 @end

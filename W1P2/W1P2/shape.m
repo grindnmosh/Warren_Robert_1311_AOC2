@@ -10,4 +10,16 @@
 
 @implementation shape
 
+-(void)shapeType:(EShapeType)type shapeName:(NSString*)name numberOfSides:(int)sides;
+{
+    shapeType = type;
+    shapeName = name;
+    numberOfSides = sides;
+}
+
+-(NSString*)printSides
+{
+    NSLog(@"name = %@ and sides = %d", shapeName, numberOfSides);
+    return shapeName;
+}
 @end

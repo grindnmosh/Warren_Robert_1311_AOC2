@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "shape.h"
 
-@interface triangle : NSObject
+@interface triangle : shape
 
 @end

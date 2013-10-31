@@ -9,5 +9,10 @@
 #import "dogBase.h"
 
 @interface chihuahua : dogBase
+{
+    int dead;
+    NSString *chiResult;
+}
+
 
 @end

@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "dogBase.h"
 
 @interface dogFactory : NSObject
+
+-(dogBase*)GetDog:(EDogType)dogType;
+
++(void)printResult:(int)result;
 
 @end
