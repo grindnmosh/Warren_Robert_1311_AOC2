@@ -15,20 +15,19 @@
 {
     if (self = [super init])
     {
-        
-        [self type:dogType_Boxer color:@"Black" breedName:@"Boxer" total:4 newLitter:5];
-        adopted = 1;
-        total = 4;
-        newLitter = 5;
-        result = total - adopted + newLitter;
+        if (self != nil)
+        {
+            return [[boxer alloc ]initWithDetails:dogType_Boxer color:@"Brown" breedName:@"boxer" total:4 newLitter:5];
+        }
     }
     return self;
-    
 }
 
 -(NSString*)printResult
 {
-    NSLog(@"The total number of %@s are %d plus %d which total %d.", breedName, total, newLitter, result);
+    adopted = 1;
+    result = (total - adopted) + newLitter;
+    NSLog(@"The total number of %@s are %d minus %d plus %d which total %d.", breedName, total, adopted, newLitter, result);
     strResult = [NSString stringWithFormat:@"Need Home: %d", result];
     return strResult;
 }

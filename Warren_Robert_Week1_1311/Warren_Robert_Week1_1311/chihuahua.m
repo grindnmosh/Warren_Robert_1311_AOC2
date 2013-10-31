@@ -11,25 +11,24 @@
 
 @implementation chihuahua
 
-
-
+// I got it to work Patricia.
 -(id)init
 {
     if (self = [super init])
     {
-        [self type:dogType_Chihuahua color:@"Brown" breedName:@"Chihuahua" total:12 newLitter:2];
-        total = 12;
-        newLitter = 2;
-        dead = 3;
-        result = total + newLitter - dead;
+        if (self != nil)
+        {
+            return [[chihuahua alloc ]initWithDetails:dogType_Chihuahua color:@"Brown" breedName:@"Chihuahua" total:12 newLitter:2];
+        }
     }
     return self;
 }
 
 
-
 -(NSString*)printResult
 {
+    dead = 3;
+    result = total + newLitter - dead;
     strResult = [NSString stringWithFormat:@"Still Living: %d", result];
     return strResult;
 }

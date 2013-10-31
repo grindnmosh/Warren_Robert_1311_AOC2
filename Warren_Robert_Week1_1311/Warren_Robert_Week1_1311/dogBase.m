@@ -40,11 +40,7 @@
 
 -(int)total:(int)preTotal newLitter:(int)litter
 {
-    total = 16;
-    newLitter = 6;
-    result = total + newLitter;
-    return result;
-    NSLog(@"%d plus %d equals %d", total, newLitter, result);
+    return [[dogBase alloc ]total:16 newLitter:8];
 }
 
 -(NSString*)printResult

@@ -14,19 +14,19 @@
 {
     if (self = [super init])
     {
-        
-        [self type:dogType_Chihuahua color:@"White" breedName:@"Poodle" total:9 newLitter:3];
-        total = 9;
-        newLitter = 3;
-        haircuts = 7;
-        result = total + newLitter - haircuts;
+        if (self != nil)
+        {
+            return [[poodle alloc ]initWithDetails:dogType_Poodle color:@"Brown" breedName:@"poodle" total:9 newLitter:3];
+        }
     }
     return self;
 }
 
 -(NSString*)printResult
 {
-    NSLog(@"The total number of %@s are %d plus %d which total %d.", breedName, total, newLitter, result);
+    haircuts = 7;
+    result = total + newLitter - haircuts;
+    NSLog(@"The total number of %@s are %d plus %d and %d already had their haircut so %d still need haircuts.", breedName, total, newLitter, haircuts, result);
     strResult = [NSString stringWithFormat:@"Need Haircut: %d", result];
     return strResult;
 }

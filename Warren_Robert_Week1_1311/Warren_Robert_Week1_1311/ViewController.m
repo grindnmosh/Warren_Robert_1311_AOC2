@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "dogBase.h"
 #import "dogFactory.h"
 #import "chihuahua.h"
 #import "boxer.h"
@@ -42,10 +43,6 @@
         
         dogBase *boxie = [factory GetDog:dogType_Boxer];
         
-        [boxie printType];
-        
-        [boxie printResult];
-        
         NSString *boxbox = [boxie printType];
         
         NSString *boxtot = [boxie printResult];
@@ -57,10 +54,6 @@
         }
         
         dogBase *poos = [factory GetDog:dogType_Poodle];
-        
-        [poos printType];
-        
-        [poos printResult];
         
         NSString *poopoo = [poos printType];
         

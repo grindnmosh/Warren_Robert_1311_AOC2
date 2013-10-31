@@ -11,7 +11,6 @@
 @interface chihuahua : dogBase
 {
     int dead;
-    NSString *chiResult;
 }
 
 
