@@ -13,6 +13,8 @@
 #import "boxer.h"
 #import "poodle.h"
 
+
+// I wasnt sure which calculation you wanted so I called the factory and the subclass overrides with the altered calculations.
 @interface ViewController ()
 
 @end
@@ -25,46 +27,53 @@
     
     //static call from Factory
     [dogFactory printResult:15];
+
+    // chihuahua class override
+    chihuahua *chisur = [[chihuahua alloc] init];
+    if (chisur != nil)
+    {
+        [chisur printResult];
+    }
+    
+    // boxer class override
+    boxer *boxsur = [[boxer alloc] init];
+    if (boxsur != nil)
+    {
+        [boxsur printResult];
+    }
+    
+    // poodle class override
+    poodle *poosur = [[poodle alloc] init];
+    if (poosur !=nil)
+    {
+        [poosur printResult];
+    }
     
     dogFactory *factory = [[dogFactory alloc] init];
     if (factory != nil)
     {
+        // chihuahua factory calls
         dogBase *chihua = [factory GetDog:dogType_Chihuahua];
         
         NSString *chichi = [chihua printType];
 
         NSString *chitot = [chihua printResult];
         
-        chihuahua *chisur = [[chihuahua alloc] init];
-        if (chisur != nil)
-        {
-            [chisur printResult];
-        }
-        
+        // boxer factory calls
         dogBase *boxie = [factory GetDog:dogType_Boxer];
         
         NSString *boxbox = [boxie printType];
         
         NSString *boxtot = [boxie printResult];
         
-        boxer *boxsur = [[boxer alloc] init];
-        if (boxsur != nil)
-        {
-            [boxsur printResult];
-        }
-        
+        // poodle factory calls
         dogBase *poos = [factory GetDog:dogType_Poodle];
         
         NSString *poopoo = [poos printType];
         
         NSString *pootot = [poos printResult];
         
-        poodle *poosur = [[poodle alloc] init];
-        if (poosur !=nil)
-        {
-            [poosur printResult];
-        }
-        
+        // breedname from factory chihuahua
         UILabel *chi = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 20.0f, 140.0f, 30.0f)];
         if (chi != nil)
         {
@@ -75,6 +84,7 @@
         }
         [self.view addSubview:chi];
         
+        //total from factory
         UILabel *chires = [[UILabel alloc] initWithFrame:CGRectMake(160.0f, 20.0f, 140.0f, 30.0f)];
         if (chires != nil)
         {
@@ -85,6 +95,7 @@
         }
         [self.view addSubview:chires];
         
+        //total from chihuahua subclass
         UILabel *chiliv = [[UILabel alloc] initWithFrame:CGRectMake(160.0f, 70.0f, 140.0f, 30.0f)];
         if (chiliv != nil)
         {
@@ -95,6 +106,7 @@
         }
         [self.view addSubview:chiliv];
         
+        // breedname from factory boxer
         UILabel *box = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 120.0f, 140.0f, 30.0f)];
         if (box != nil)
         {
@@ -105,6 +117,7 @@
         }
         [self.view addSubview:box];
         
+        // total from factory
         UILabel *boxres = [[UILabel alloc] initWithFrame:CGRectMake(160.0f, 120.0f, 140.0f, 30.0f)];
         if (boxres != nil)
         {
@@ -115,6 +128,7 @@
         }
         [self.view addSubview:boxres];
         
+        // total from boxer subclass
         UILabel *boxliv = [[UILabel alloc] initWithFrame:CGRectMake(160.0f, 170.0f, 140.0f, 30.0f)];
         if (boxliv != nil)
         {
@@ -125,6 +139,7 @@
         }
         [self.view addSubview:boxliv];
         
+        // breedname from factory poodle
         UILabel *poo = [[UILabel alloc] initWithFrame:CGRectMake(10.0f, 220.0f, 140.0f, 30.0f)];
         if (poo != nil)
         {
@@ -135,6 +150,7 @@
         }
         [self.view addSubview:poo];
         
+        // total from factory
         UILabel *poores = [[UILabel alloc] initWithFrame:CGRectMake(160.0f, 220.0f, 140.0f, 30.0f)];
         if (poores != nil)
         {
@@ -145,6 +161,7 @@
         }
         [self.view addSubview:poores];
         
+        // total from poodle subclass
         UILabel *pooliv = [[UILabel alloc] initWithFrame:CGRectMake(160.0f, 270.0f, 140.0f, 30.0f)];
         if (pooliv != nil)
         {

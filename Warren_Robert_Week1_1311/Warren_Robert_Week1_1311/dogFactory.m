@@ -12,6 +12,7 @@
 
 @implementation dogFactory
 
+//factory
 -(dogBase*)GetDog:(EDogType)type
 {
     if (type == dogType_Chihuahua)
@@ -32,6 +33,7 @@
     return nil;
 }
 
+//static method
 +(void)printResult:(int)result
 {
     NSLog(@"total before litter = %d", result);

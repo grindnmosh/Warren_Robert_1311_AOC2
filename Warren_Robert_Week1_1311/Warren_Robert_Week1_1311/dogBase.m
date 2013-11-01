@@ -11,6 +11,7 @@
 
 @implementation dogBase
 
+// setter/getter
 @synthesize type;
 @synthesize color;
 @synthesize breedName;
@@ -28,6 +29,7 @@
         breedName = breed;
         total = currentTotal;
         newLitter = litterTotal;
+        // calculation
         result = total + newLitter;
     }
     return self;
@@ -38,11 +40,13 @@
     
 }
 
+// data to be calculated that is overridden anyway
 -(int)total:(int)preTotal newLitter:(int)litter
 {
     return [[dogBase alloc ]total:16 newLitter:8];
 }
 
+// printResult default used by Factory and overridden in SubClasses
 -(NSString*)printResult
 {
     NSLog(@"The total number of %@s are %d plus %d which total %d.", breedName, total, newLitter, result);
@@ -50,6 +54,7 @@
     return strResult;
 }
 
+// printType default used by Factory and overridden in SubClasses
 -(NSString*)printType
 {
     NSLog(@"There are  %d total %@ not counting the new litter of %d and they are all %@.", total, breedName, newLitter, color);

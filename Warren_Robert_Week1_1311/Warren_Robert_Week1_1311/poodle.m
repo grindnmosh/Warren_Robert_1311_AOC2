@@ -10,18 +10,17 @@
 
 @implementation poodle
 
+// I got it to work Patricia.
 -(id)init
 {
-    if (self = [super init])
+    if (self != nil)
     {
-        if (self != nil)
-        {
-            return [[poodle alloc ]initWithDetails:dogType_Poodle color:@"Brown" breedName:@"poodle" total:9 newLitter:3];
-        }
+        return [[poodle alloc ]initWithDetails:dogType_Poodle color:@"Brown" breedName:@"poodle" total:9 newLitter:3];
     }
     return self;
 }
 
+//poodle override
 -(NSString*)printResult
 {
     haircuts = 7;

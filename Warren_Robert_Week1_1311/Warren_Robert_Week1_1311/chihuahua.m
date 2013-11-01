@@ -14,17 +14,15 @@
 // I got it to work Patricia.
 -(id)init
 {
-    if (self = [super init])
+    if (self != nil)
     {
-        if (self != nil)
-        {
-            return [[chihuahua alloc ]initWithDetails:dogType_Chihuahua color:@"Brown" breedName:@"Chihuahua" total:12 newLitter:2];
-        }
+        return [[chihuahua alloc ]initWithDetails:dogType_Chihuahua color:@"Brown" breedName:@"Chihuahua" total:12 newLitter:2];
     }
     return self;
 }
 
 
+//chihuahua override
 -(NSString*)printResult
 {
     dead = 3;

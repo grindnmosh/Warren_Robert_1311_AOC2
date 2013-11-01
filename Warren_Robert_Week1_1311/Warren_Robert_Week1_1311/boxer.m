@@ -11,18 +11,17 @@
 
 @implementation boxer
 
+// I got it to work Patricia.
 -(id)init
 {
-    if (self = [super init])
+    if (self != nil)
     {
-        if (self != nil)
-        {
-            return [[boxer alloc ]initWithDetails:dogType_Boxer color:@"Brown" breedName:@"boxer" total:4 newLitter:5];
-        }
+        return [[boxer alloc ]initWithDetails:dogType_Boxer color:@"Brown" breedName:@"boxer" total:4 newLitter:5];
     }
     return self;
 }
 
+//boxer override
 -(NSString*)printResult
 {
     adopted = 1;

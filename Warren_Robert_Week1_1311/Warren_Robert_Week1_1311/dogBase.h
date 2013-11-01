@@ -27,6 +27,7 @@ typedef enum
     int result;
 }
 
+// setter/getter
 @property  EDogType type;
 @property NSString *color;
 @property NSString *breedName;
