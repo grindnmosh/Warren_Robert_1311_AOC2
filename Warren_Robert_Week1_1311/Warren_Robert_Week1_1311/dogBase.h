@@ -15,6 +15,7 @@ typedef enum
     dogType_Poodle
 } EDogType;
 
+//protected variables
 @interface dogBase : NSObject
 {
 @protected
