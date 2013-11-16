@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EventsViewController">
+            <connections>
+                <outlet property="assignment" destination="9VM-TU-mJN" id="9br-pq-Hl2"/>
+                <outlet property="datePicker" destination="O5j-yH-DyS" id="qFV-5Y-Md0"/>
+                <outlet property="swiper" destination="wrN-eM-tEn" id="OAN-eO-rQM"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="568" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1k-o8-TE0">
+                    <rect key="frame" x="11" y="87" width="95" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" placeholderIntrinsicWidth="110" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWe-m5-Z4I">
+                    <rect key="frame" x="190" y="154" width="110" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="CLa-EL-wt3"/>
+                        <constraint firstAttribute="width" constant="110" id="SyP-Ad-XlK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="15"/>
+                    <state key="normal" title="Close Keyboard">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onClick:" destination="-1" eventType="touchUpInside" id="yvd-En-ReH"/>
+                    </connections>
+                </button>
+                <datePicker contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="162" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="O5j-yH-DyS">
+                    <rect key="frame" x="0.0" y="406" width="320" height="162"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="162" id="0lQ-RO-TyK"/>
+                        <constraint firstAttribute="height" constant="162" id="L03-vi-NH9"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="ZL0-FE-vTY"/>
+                        <constraint firstAttribute="width" constant="320" id="ri3-GY-AZf"/>
+                    </constraints>
+                    <date key="date" timeIntervalSinceReferenceDate="405491565.739645">
+                        <!--2013-11-07 04:32:45 +0000-->
+                    </date>
+                    <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                        <!--1970-01-01 11:00:00 +0000-->
+                    </date>
+                    <locale key="locale" localeIdentifier="en"/>
+                    <timeZone key="timeZone" name="America/Los_Angeles">
+                        <data key="data">
+VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
+y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
+5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
+8n/BkPNvwKD0X6OQ9U+ioPY/hZD3L4Sg+CiiEPkPZqD6CIQQ+viDIPvoZhD82GUg/chIEP64RyD/qCoQ
+AJgpIAGIDBACeAsgA3EokARhJ6AFUQqQBkEJoAcw7JAHjUOgCRDOkAmtvyAK8LCQC+CvoAzZzRANwJGg
+DrmvEA+priAQmZEQEYmQIBJ5cxATaXIgFFlVEBVJVCAWOTcQFyk2IBgiU5AZCRggGgI1kBryNKAb4heQ
+HNIWoB3B+ZAesfigH6HbkCB2KyAhgb2QIlYNICNq2hAkNe8gJUq8ECYV0SAnKp4QJ/7toCkKgBAp3s+g
+KupiECu+saAs036QLZ6ToC6zYJAvfnWgMJNCkDFnkiAycySQM0d0IDRTBpA1J1YgNjLokDcHOCA4HAUQ
+OOcaIDn75xA6xvwgO9vJEDywGKA9u6sQPo/6oD+bjRBAb9ygQYSpkEJPvqBDZIuQRC+goEVEbZBF89Mg
+Ry2KEEfTtSBJDWwQSbOXIErtThBLnLOgTNZqkE18laBOtkyQT1x3oFCWLpBRPFmgUnYQkFMcO6BUVfKQ
+VPwdoFY11JBW5TogWB7xEFjFHCBZ/tMQWqT+IFvetRBchOAgXb6XEF5kwiBfnnkQYE3eoGGHlZBiLcCg
+Y2d3kGQNoqBlR1mQZe2EoGcnO5BnzWagaQcdkGmtSKBq5v+Qa5ZlIGzQHBBtdkcgbq/+EG9WKSBwj+AQ
+cTYLIHJvwhBzFe0gdE+kEHT/CaB2OMCQdt7roHgYopB4vs2gefiEkHqer6B72GaQfH6RoH24SJB+XnOg
+f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
+</data>
+                    </timeZone>
+                    <connections>
+                        <action selector="onChange:" destination="-1" eventType="valueChanged" id="Luz-BX-Q8N"/>
+                    </connections>
+                </datePicker>
+                <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="75" text="Swipe Left To Return Assignments" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrN-eM-tEn">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.8476138164" green="0.92086162520000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="di5-Ku-0z9"/>
+                        <constraint firstAttribute="width" constant="320" id="fNe-B4-arD"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="yib-oW-QZK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="24" text="Select the date and time of event" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ltZ-xY-g2a">
+                    <rect key="frame" x="0.0" y="371" width="320" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.8476138164" green="0.92086162520000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="28w-TW-Vyd"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="320" id="LO6-fK-ReR"/>
+                        <constraint firstAttribute="width" constant="320" id="gyy-bv-rBT"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="lSx-93-JIx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="299" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Assignment Here" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9VM-TU-mJN">
+                    <rect key="frame" x="11" y="116" width="299" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="299" id="6LM-5o-pPO"/>
+                        <constraint firstAttribute="width" constant="299" id="m8W-TJ-0FZ"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="qPo-Aj-gS7"/>
+                        <constraint firstAttribute="height" constant="30" id="xkV-NR-4R7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="yes"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wrN-eM-tEn" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="1XP-bs-ecZ"/>
+                <constraint firstItem="O5j-yH-DyS" firstAttribute="top" secondItem="ltZ-xY-g2a" secondAttribute="bottom" id="1xt-dH-Rhr"/>
+                <constraint firstItem="9VM-TU-mJN" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="11" id="6CG-Fc-IMV"/>
+                <constraint firstItem="wrN-eM-tEn" firstAttribute="top" secondItem="1" secondAttribute="top" id="6ov-yz-2eK"/>
+                <constraint firstAttribute="trailing" secondItem="ltZ-xY-g2a" secondAttribute="trailing" id="6tt-ed-080"/>
+                <constraint firstItem="iWe-m5-Z4I" firstAttribute="top" secondItem="9VM-TU-mJN" secondAttribute="bottom" constant="8" symbolic="YES" id="Bhh-fL-Nft"/>
+                <constraint firstAttribute="trailing" secondItem="9VM-TU-mJN" secondAttribute="trailing" constant="10" id="F8a-3j-SYn"/>
+                <constraint firstItem="O5j-yH-DyS" firstAttribute="top" secondItem="ltZ-xY-g2a" secondAttribute="bottom" id="JNT-be-Lcu"/>
+                <constraint firstItem="O5j-yH-DyS" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="L4Q-ck-Y65"/>
+                <constraint firstAttribute="bottom" secondItem="O5j-yH-DyS" secondAttribute="bottom" id="Lbr-Yl-UBZ"/>
+                <constraint firstItem="9VM-TU-mJN" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="11" id="MbC-yy-rbV"/>
+                <constraint firstItem="ltZ-xY-g2a" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="UNA-ei-MbZ"/>
+                <constraint firstAttribute="trailing" secondItem="wrN-eM-tEn" secondAttribute="trailing" id="VtN-aL-W0C"/>
+                <constraint firstItem="9VM-TU-mJN" firstAttribute="top" secondItem="V1k-o8-TE0" secondAttribute="bottom" constant="8" symbolic="YES" id="fc3-9O-gVR"/>
+                <constraint firstAttribute="trailing" secondItem="iWe-m5-Z4I" secondAttribute="trailing" constant="20" symbolic="YES" id="imX-SS-k0c"/>
+                <constraint firstItem="9VM-TU-mJN" firstAttribute="top" secondItem="1" secondAttribute="top" constant="116" id="jdd-8y-1Na"/>
+                <constraint firstItem="9VM-TU-mJN" firstAttribute="leading" secondItem="V1k-o8-TE0" secondAttribute="leading" id="mKW-2t-e3T"/>
+                <constraint firstAttribute="trailing" secondItem="O5j-yH-DyS" secondAttribute="trailing" id="mux-2G-NNh"/>
+                <constraint firstAttribute="trailing" secondItem="9VM-TU-mJN" secondAttribute="trailing" constant="10" id="rOI-x6-dQA"/>
+                <constraint firstItem="iWe-m5-Z4I" firstAttribute="top" secondItem="9VM-TU-mJN" secondAttribute="bottom" constant="8" id="vvw-gm-fJG"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

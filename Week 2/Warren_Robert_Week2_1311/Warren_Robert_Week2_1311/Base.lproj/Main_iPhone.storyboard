@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment version="1536" defaultVersion="1536" identifier="iOS"/>
+        <development version="4600" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LS0-RZ-KJz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1876774638" green="0.31144757029999998" blue="0.96072520380000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Robert's Doggie Adoptions">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="23" name="TimesNewRomanPS-BoldItalicMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="2"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="fhU-mw-z1j">
+                                <rect key="frame" x="206" y="112" width="94" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="onChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="wKb-cA-SIp"/>
+                                </connections>
+                            </stepper>
+                            <imageView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chihuahua1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Gt8-Zf-iaI">
+                                <rect key="frame" x="20" y="123" width="118" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" button="YES" image="YES" staticText="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="78S-CE-ga2"/>
+                                    <constraint firstAttribute="width" constant="118" id="KcT-oR-khZ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boxer.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9GZ-aL-H2c">
+                                <rect key="frame" x="20" y="223" width="118" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="3UB-QC-Jne"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poodle.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Y4P-g0-xO3">
+                                <rect key="frame" x="20" y="303" width="118" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="aOJ-Wf-2yQ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fT-Zp-tkJ">
+                                <rect key="frame" x="138" y="180" width="152" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="yo4-a3-oQc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="CHIHUAHUA">
+                                    <color key="titleColor" red="0.0018546523539999999" green="0.00017196471699999999" blue="0.0035665760870000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="disabled" title="chihuahua">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ouh-CZ-jRM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A14-7X-2Ph">
+                                <rect key="frame" x="138" y="280" width="152" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="BOXER">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" title="boxer">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vJE-a3-vSU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qca-Mc-UZv">
+                                <rect key="frame" x="138" y="360" width="152" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="POODLE">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" title="poodle">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6Q7-gJ-fLm"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Kbo-jr-4wH">
+                                <rect key="frame" x="-5" y="519" width="332" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="332" id="Fqo-yS-MGR"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="White"/>
+                                    <segment title="Grey"/>
+                                    <segment title="Yellow"/>
+                                    <segment title="Purple"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="A2B-jh-2Jv"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="umk-mr-1LJ">
+                                <rect key="frame" x="20" y="442" width="280" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="xxZ-P9-OcP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Remaining Dogs Available">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PUl-mY-BJ2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YIE-8F-12H">
+                                <rect key="frame" x="282" y="495" width="18" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kfa-Uc-pC1"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Type Of Dog Adopted" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="hjX-CC-hKf">
+                                <rect key="frame" x="20" y="67" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kbo-jr-4wH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="-5" id="3qs-xq-DwS"/>
+                            <constraint firstAttribute="bottom" secondItem="YIE-8F-12H" secondAttribute="bottom" constant="34" id="577-Fr-8wx"/>
+                            <constraint firstItem="A14-7X-2Ph" firstAttribute="leading" secondItem="qca-Mc-UZv" secondAttribute="leading" type="default" id="6IE-7J-plj"/>
+                            <constraint firstItem="9GZ-aL-H2c" firstAttribute="trailing" secondItem="Gt8-Zf-iaI" secondAttribute="trailing" type="default" id="An2-jg-0vh"/>
+                            <constraint firstItem="Y4P-g0-xO3" firstAttribute="trailing" secondItem="9GZ-aL-H2c" secondAttribute="trailing" type="default" id="CgJ-st-lfo"/>
+                            <constraint firstItem="9GZ-aL-H2c" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="223" id="Cha-Gp-PUR"/>
+                            <constraint firstAttribute="bottom" secondItem="Y4P-g0-xO3" secondAttribute="bottom" constant="145" id="CmK-YQ-7ql"/>
+                            <constraint firstItem="umk-mr-1LJ" firstAttribute="leading" secondItem="Y4P-g0-xO3" secondAttribute="leading" type="default" id="Dab-CN-jHt"/>
+                            <constraint firstItem="hjX-CC-hKf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ef2-fa-8a8"/>
+                            <constraint firstItem="hjX-CC-hKf" firstAttribute="top" secondItem="LS0-RZ-KJz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="G6w-ox-tzs"/>
+                            <constraint firstItem="Y4P-g0-xO3" firstAttribute="leading" secondItem="9GZ-aL-H2c" secondAttribute="leading" type="default" id="GHO-mZ-NFI"/>
+                            <constraint firstItem="1fT-Zp-tkJ" firstAttribute="leading" secondItem="A14-7X-2Ph" secondAttribute="leading" type="default" id="JzF-VH-IHE"/>
+                            <constraint firstItem="Gt8-Zf-iaI" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="123" id="LYa-eB-jlg"/>
+                            <constraint firstAttribute="trailing" secondItem="hjX-CC-hKf" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Mni-uo-Db9"/>
+                            <constraint firstItem="LS0-RZ-KJz" firstAttribute="centerX" secondItem="hjX-CC-hKf" secondAttribute="centerX" type="default" id="OP0-8z-4Ve"/>
+                            <constraint firstItem="LS0-RZ-KJz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" type="default" id="TUR-oP-khy"/>
+                            <constraint firstItem="1fT-Zp-tkJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="138" id="UQc-Zb-fMI"/>
+                            <constraint firstItem="1fT-Zp-tkJ" firstAttribute="trailing" secondItem="A14-7X-2Ph" secondAttribute="trailing" type="default" id="VOB-4h-LLP"/>
+                            <constraint firstItem="LS0-RZ-KJz" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" type="default" id="WHI-8a-umg"/>
+                            <constraint firstItem="fhU-mw-z1j" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="112" id="WJH-68-aSq"/>
+                            <constraint firstItem="fhU-mw-z1j" firstAttribute="trailing" secondItem="hjX-CC-hKf" secondAttribute="trailing" type="default" id="bcU-4C-JcV"/>
+                            <constraint firstAttribute="bottom" secondItem="umk-mr-1LJ" secondAttribute="bottom" constant="74" id="ggE-s4-pyk"/>
+                            <constraint firstItem="1fT-Zp-tkJ" firstAttribute="bottom" secondItem="Gt8-Zf-iaI" secondAttribute="bottom" type="default" id="hgm-6T-d0V"/>
+                            <constraint firstItem="9GZ-aL-H2c" firstAttribute="leading" secondItem="Gt8-Zf-iaI" secondAttribute="leading" type="default" id="k4N-DN-XW2"/>
+                            <constraint firstItem="hjX-CC-hKf" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="67" id="k56-f6-8K8"/>
+                            <constraint firstItem="A14-7X-2Ph" firstAttribute="trailing" secondItem="qca-Mc-UZv" secondAttribute="trailing" type="default" id="l5C-DC-nf7"/>
+                            <constraint firstAttribute="bottom" secondItem="Kbo-jr-4wH" secondAttribute="bottom" type="default" id="nd5-eh-B78"/>
+                            <constraint firstItem="Y4P-g0-xO3" firstAttribute="bottom" secondItem="qca-Mc-UZv" secondAttribute="bottom" type="default" id="oKU-yN-H8j"/>
+                            <constraint firstItem="A14-7X-2Ph" firstAttribute="bottom" secondItem="9GZ-aL-H2c" secondAttribute="bottom" type="default" id="phs-dh-66a"/>
+                            <constraint firstItem="Gt8-Zf-iaI" firstAttribute="leading" secondItem="hjX-CC-hKf" secondAttribute="leading" type="default" id="s8o-TE-578"/>
+                            <constraint firstItem="YIE-8F-12H" firstAttribute="trailing" secondItem="umk-mr-1LJ" secondAttribute="trailing" type="default" id="t8I-r6-WJO"/>
+                            <constraint firstItem="fhU-mw-z1j" firstAttribute="trailing" secondItem="umk-mr-1LJ" secondAttribute="trailing" type="default" id="yZH-EW-zbR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="QGw-U3-0tI"/>
+                    <connections>
+                        <outlet property="adoptControl" destination="fhU-mw-z1j" id="eKA-uv-LkK"/>
+                        <outlet property="adoptValue" destination="hjX-CC-hKf" id="c9b-3M-HCR"/>
+                        <outlet property="boxButton" destination="A14-7X-2Ph" id="Seo-N1-LkA"/>
+                        <outlet property="chiButton" destination="1fT-Zp-tkJ" id="gYr-we-CgM"/>
+                        <outlet property="pooButton" destination="qca-Mc-UZv" id="MJ5-8E-X3k"/>
+                        <outlet property="segmented" destination="Kbo-jr-4wH" id="HiO-IH-PHP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Poodle.jpg" width="300" height="291"/>
+        <image name="boxer.jpg" width="2047" height="1947"/>
+        <image name="chihuahua1.jpg" width="400" height="273"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

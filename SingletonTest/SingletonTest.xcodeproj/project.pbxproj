@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E25600B71832FB1800E2B811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25600B61832FB1800E2B811 /* Foundation.framework */; };
+		E25600B91832FB1800E2B811 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25600B81832FB1800E2B811 /* CoreGraphics.framework */; };
+		E25600BB1832FB1800E2B811 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25600BA1832FB1800E2B811 /* UIKit.framework */; };
+		E25600C11832FB1800E2B811 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E25600BF1832FB1800E2B811 /* InfoPlist.strings */; };
+		E25600C31832FB1800E2B811 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E25600C21832FB1800E2B811 /* main.m */; };
+		E25600C71832FB1800E2B811 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E25600C61832FB1800E2B811 /* AppDelegate.m */; };
+		E25600CA1832FB1800E2B811 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E25600C81832FB1800E2B811 /* Main.storyboard */; };
+		E25600CD1832FB1800E2B811 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25600CC1832FB1800E2B811 /* ViewController.m */; };
+		E25600CF1832FB1800E2B811 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E25600CE1832FB1800E2B811 /* Images.xcassets */; };
+		E25600D61832FB1800E2B811 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25600D51832FB1800E2B811 /* XCTest.framework */; };
+		E25600D71832FB1800E2B811 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25600B61832FB1800E2B811 /* Foundation.framework */; };
+		E25600D81832FB1800E2B811 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E25600BA1832FB1800E2B811 /* UIKit.framework */; };
+		E25600E01832FB1800E2B811 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E25600DE1832FB1800E2B811 /* InfoPlist.strings */; };
+		E25600E21832FB1800E2B811 /* SingletonTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E25600E11832FB1800E2B811 /* SingletonTestTests.m */; };
+		E25600ED1832FB7000E2B811 /* Second.m in Sources */ = {isa = PBXBuildFile; fileRef = E25600EC1832FB7000E2B811 /* Second.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E25600D91832FB1800E2B811 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E25600AB1832FB1800E2B811 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E25600B21832FB1800E2B811;
+			remoteInfo = SingletonTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E25600B31832FB1800E2B811 /* SingletonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingletonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25600B61832FB1800E2B811 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E25600B81832FB1800E2B811 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E25600BA1832FB1800E2B811 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E25600BE1832FB1800E2B811 /* SingletonTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingletonTest-Info.plist"; sourceTree = "<group>"; };
+		E25600C01832FB1800E2B811 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E25600C21832FB1800E2B811 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E25600C41832FB1800E2B811 /* SingletonTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SingletonTest-Prefix.pch"; sourceTree = "<group>"; };
+		E25600C51832FB1800E2B811 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E25600C61832FB1800E2B811 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E25600C91832FB1800E2B811 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E25600CB1832FB1800E2B811 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E25600CC1832FB1800E2B811 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E25600CE1832FB1800E2B811 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E25600D41832FB1800E2B811 /* SingletonTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingletonTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25600D51832FB1800E2B811 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E25600DD1832FB1800E2B811 /* SingletonTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingletonTestTests-Info.plist"; sourceTree = "<group>"; };
+		E25600DF1832FB1800E2B811 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E25600E11832FB1800E2B811 /* SingletonTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonTestTests.m; sourceTree = "<group>"; };
+		E25600EB1832FB7000E2B811 /* Second.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Second.h; sourceTree = "<group>"; };
+		E25600EC1832FB7000E2B811 /* Second.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Second.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E25600B01832FB1800E2B811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25600B91832FB1800E2B811 /* CoreGraphics.framework in Frameworks */,
+				E25600BB1832FB1800E2B811 /* UIKit.framework in Frameworks */,
+				E25600B71832FB1800E2B811 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25600D11832FB1800E2B811 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25600D61832FB1800E2B811 /* XCTest.framework in Frameworks */,
+				E25600D81832FB1800E2B811 /* UIKit.framework in Frameworks */,
+				E25600D71832FB1800E2B811 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E25600AA1832FB1800E2B811 = {
+			isa = PBXGroup;
+			children = (
+				E25600BC1832FB1800E2B811 /* SingletonTest */,
+				E25600DB1832FB1800E2B811 /* SingletonTestTests */,
+				E25600B51832FB1800E2B811 /* Frameworks */,
+				E25600B41832FB1800E2B811 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E25600B41832FB1800E2B811 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E25600B31832FB1800E2B811 /* SingletonTest.app */,
+				E25600D41832FB1800E2B811 /* SingletonTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E25600B51832FB1800E2B811 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E25600B61832FB1800E2B811 /* Foundation.framework */,
+				E25600B81832FB1800E2B811 /* CoreGraphics.framework */,
+				E25600BA1832FB1800E2B811 /* UIKit.framework */,
+				E25600D51832FB1800E2B811 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E25600BC1832FB1800E2B811 /* SingletonTest */ = {
+			isa = PBXGroup;
+			children = (
+				E25600C51832FB1800E2B811 /* AppDelegate.h */,
+				E25600C61832FB1800E2B811 /* AppDelegate.m */,
+				E25600C81832FB1800E2B811 /* Main.storyboard */,
+				E25600CB1832FB1800E2B811 /* ViewController.h */,
+				E25600CC1832FB1800E2B811 /* ViewController.m */,
+				E25600CE1832FB1800E2B811 /* Images.xcassets */,
+				E25600BD1832FB1800E2B811 /* Supporting Files */,
+				E25600EB1832FB7000E2B811 /* Second.h */,
+				E25600EC1832FB7000E2B811 /* Second.m */,
+			);
+			path = SingletonTest;
+			sourceTree = "<group>";
+		};
+		E25600BD1832FB1800E2B811 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E25600BE1832FB1800E2B811 /* SingletonTest-Info.plist */,
+				E25600BF1832FB1800E2B811 /* InfoPlist.strings */,
+				E25600C21832FB1800E2B811 /* main.m */,
+				E25600C41832FB1800E2B811 /* SingletonTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E25600DB1832FB1800E2B811 /* SingletonTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				E25600E11832FB1800E2B811 /* SingletonTestTests.m */,
+				E25600DC1832FB1800E2B811 /* Supporting Files */,
+			);
+			path = SingletonTestTests;
+			sourceTree = "<group>";
+		};
+		E25600DC1832FB1800E2B811 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E25600DD1832FB1800E2B811 /* SingletonTestTests-Info.plist */,
+				E25600DE1832FB1800E2B811 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E25600B21832FB1800E2B811 /* SingletonTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25600E51832FB1800E2B811 /* Build configuration list for PBXNativeTarget "SingletonTest" */;
+			buildPhases = (
+				E25600AF1832FB1800E2B811 /* Sources */,
+				E25600B01832FB1800E2B811 /* Frameworks */,
+				E25600B11832FB1800E2B811 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SingletonTest;
+			productName = SingletonTest;
+			productReference = E25600B31832FB1800E2B811 /* SingletonTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E25600D31832FB1800E2B811 /* SingletonTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E25600E81832FB1800E2B811 /* Build configuration list for PBXNativeTarget "SingletonTestTests" */;
+			buildPhases = (
+				E25600D01832FB1800E2B811 /* Sources */,
+				E25600D11832FB1800E2B811 /* Frameworks */,
+				E25600D21832FB1800E2B811 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E25600DA1832FB1800E2B811 /* PBXTargetDependency */,
+			);
+			name = SingletonTestTests;
+			productName = SingletonTestTests;
+			productReference = E25600D41832FB1800E2B811 /* SingletonTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E25600AB1832FB1800E2B811 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Robert Warren";
+				TargetAttributes = {
+					E25600D31832FB1800E2B811 = {
+						TestTargetID = E25600B21832FB1800E2B811;
+					};
+				};
+			};
+			buildConfigurationList = E25600AE1832FB1800E2B811 /* Build configuration list for PBXProject "SingletonTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E25600AA1832FB1800E2B811;
+			productRefGroup = E25600B41832FB1800E2B811 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E25600B21832FB1800E2B811 /* SingletonTest */,
+				E25600D31832FB1800E2B811 /* SingletonTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E25600B11832FB1800E2B811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25600CF1832FB1800E2B811 /* Images.xcassets in Resources */,
+				E25600C11832FB1800E2B811 /* InfoPlist.strings in Resources */,
+				E25600CA1832FB1800E2B811 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25600D21832FB1800E2B811 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25600E01832FB1800E2B811 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E25600AF1832FB1800E2B811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25600CD1832FB1800E2B811 /* ViewController.m in Sources */,
+				E25600C71832FB1800E2B811 /* AppDelegate.m in Sources */,
+				E25600C31832FB1800E2B811 /* main.m in Sources */,
+				E25600ED1832FB7000E2B811 /* Second.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E25600D01832FB1800E2B811 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E25600E21832FB1800E2B811 /* SingletonTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E25600DA1832FB1800E2B811 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E25600B21832FB1800E2B811 /* SingletonTest */;
+			targetProxy = E25600D91832FB1800E2B811 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E25600BF1832FB1800E2B811 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E25600C01832FB1800E2B811 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E25600C81832FB1800E2B811 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E25600C91832FB1800E2B811 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E25600DE1832FB1800E2B811 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E25600DF1832FB1800E2B811 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E25600E31832FB1800E2B811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E25600E41832FB1800E2B811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E25600E61832FB1800E2B811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingletonTest/SingletonTest-Prefix.pch";
+				INFOPLIST_FILE = "SingletonTest/SingletonTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E25600E71832FB1800E2B811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingletonTest/SingletonTest-Prefix.pch";
+				INFOPLIST_FILE = "SingletonTest/SingletonTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E25600E91832FB1800E2B811 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SingletonTest.app/SingletonTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingletonTest/SingletonTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SingletonTestTests/SingletonTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E25600EA1832FB1800E2B811 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SingletonTest.app/SingletonTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SingletonTest/SingletonTest-Prefix.pch";
+				INFOPLIST_FILE = "SingletonTestTests/SingletonTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E25600AE1832FB1800E2B811 /* Build configuration list for PBXProject "SingletonTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25600E31832FB1800E2B811 /* Debug */,
+				E25600E41832FB1800E2B811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E25600E51832FB1800E2B811 /* Build configuration list for PBXNativeTarget "SingletonTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25600E61832FB1800E2B811 /* Debug */,
+				E25600E71832FB1800E2B811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E25600E81832FB1800E2B811 /* Build configuration list for PBXNativeTarget "SingletonTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E25600E91832FB1800E2B811 /* Debug */,
+				E25600EA1832FB1800E2B811 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E25600AB1832FB1800E2B811 /* Project object */;
+}
